@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FamFace — Download</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="hero">
+      <h1>FamFace</h1>
+      <p>Download the desktop version of your chat app and share it with others.</p>
+    </header>
+
+    <main>
+      <section class="download-card">
+        <h2>Get the App</h2>
+        <p>Click the button for your platform after building the installer.</p>
+        <div class="download-buttons">
+          <a class="button" href="downloads/FamFace Setup.exe" download>Windows</a>
+          <a class="button" href="downloads/FamFace.dmg" download>macOS</a>
+          <a class="button" href="downloads/FamFace.AppImage" download>Linux</a>
+        </div>
+        <p class="note">After packaging, place the generated installer files in <code>website/downloads/</code> for them to work here.</p>
+      </section>
+
+      <section class="instructions-card">
+        <h2>How to build</h2>
+        <ol>
+          <li>Install dependencies: <code>npm install</code></li>
+          <li>Build the desktop app: <code>npm run dist</code></li>
+          <li>Copy the generated files from <code>dist/</code> into <code>website/downloads/</code></li>
+          <li>Open <code>website/index.html</code> in a browser or host the folder on any static web server.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>FamFace built with Electron and Socket.io.</p>
+    </footer>
+  </div>
+</body>
+</html>

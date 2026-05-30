@@ -1,0 +1,6 @@
+{
+  "appId": "com.ahmed.famface",
+  "appName": "FamFace",
+  "webDir": ".",
+  "bundledWebRuntime": true
+}
